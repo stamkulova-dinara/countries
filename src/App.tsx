@@ -1,5 +1,5 @@
 import './App.css';
-import { Countries } from './components/Countries';
+import { Countries } from './pages/Countries';
 
 function App() {
   return (

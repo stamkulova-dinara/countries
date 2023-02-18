@@ -1,0 +1,9 @@
+
+
+.countries__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 100px 40px;
+    justify-content: center;
+}

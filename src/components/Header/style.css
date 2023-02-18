@@ -1,0 +1,38 @@
+header {
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-box__search {
+border: 1px solid gray;
+display: flex;
+align-items: center;
+padding: 5px 10px;
+border-radius: 25px;
+}
+
+.header-box__search__input {
+    border: none;
+    width: 200px;
+    background: transparent;
+}
+
+.header-box__search__input:focus {
+    outline: none;
+}
+
+/* .header-box__search__icon {
+    
+} */
+
+.header-box__search__icon:hover {
+    cursor: pointer;
+}

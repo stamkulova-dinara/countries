@@ -1,0 +1,17 @@
+.card {
+    position: relative;
+}
+
+.card-box {
+    display: flex;
+}
+
+.card__continent {
+    color: cadetblue;
+    background: rgb(197, 219, 219);
+    width: 100%;
+}
+
+.ard-box__emoji {
+    font-size: 60px;
+}
