@@ -19,6 +19,10 @@ padding: 5px 10px;
 border-radius: 25px;
 }
 
+.header-box__logo {
+  font-family: 'Satisfy', cursive;
+  color: rgb(3, 40, 55);
+}
 .header-box__search__input {
     border: none;
     width: 200px;

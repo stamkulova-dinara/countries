@@ -24,3 +24,8 @@ export const ALL_COUNTRIES = gql`
     }
   }
 `;
+
+// export const SEARCH_COUNTRIES_BY_CODE = gql`
+// query  {
+
+// }`

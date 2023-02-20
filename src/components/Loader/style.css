@@ -1,0 +1,43 @@
+.container {
+    margin: 0 auto;
+  
+    width: 100%;
+    max-width: 720px;
+    min-height: 100vh;
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+/* Keyframes Spin */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Spinner */
+.spinner {
+  --spinner-color: black;
+
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.spinner--hourglass {
+  width: 58px;
+  background: repeating-conic-gradient(
+    transparent 0deg 90deg,
+    var(--spinner-color) 90deg 180deg
+  );
+
+  animation-duration: 2s;
+}
