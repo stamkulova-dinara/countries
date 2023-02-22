@@ -1,20 +1,24 @@
+import { Dispatch, FC, SetStateAction } from "react";
 import { Search } from "@mui/icons-material";
-import { FC } from "react";
 import "./style.css";
+
 type HeaderProps = {
-  handleSearch: any;
+  handleSearch: () => void;
+  setSearchTerm: Dispatch<SetStateAction<string>>;
+  searchTerm: string;
 };
-export const Header: FC<HeaderProps> = ({ handleSearch }) => {
+export const Header:FC<HeaderProps> = ({handleSearch, searchTerm, setSearchTerm}) => {
   return (
     <header>
       <div className="header-box">
         <h1 className="header-box__logo">Countries</h1>
         <div className="header-box__search">
-          <Search className="header-box__search__icon" />
+          <Search className="header-box__search__icon" onClick={handleSearch} />
           <input
-            type="text"
             className="header-box__search__input"
-            onChange={(e) => handleSearch(e)}
+            type="text"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
             placeholder="Search..."
           />
         </div>

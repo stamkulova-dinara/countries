@@ -25,7 +25,27 @@ export const ALL_COUNTRIES = gql`
   }
 `;
 
-// export const SEARCH_COUNTRIES_BY_CODE = gql`
-// query  {
-
-// }`
+export const SEARCH_COUNTRIES_BY_CODE = gql`
+  query SearchByCode($code: ID!){
+    country(code: $code) {
+      code
+      name
+      native
+      phone
+      capital
+      currency
+      languages {
+        name
+        native
+        rtl
+      }
+      continent {
+        name
+      }
+      emoji
+      states {
+        name
+      }
+    }
+  }
+`;

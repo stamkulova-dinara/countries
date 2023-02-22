@@ -1,9 +1,27 @@
-
-
 .countries__cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
     padding: 100px 40px;
     justify-content: center;
+}
+
+.cards__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.cards__box__pag {
+    float: right;
+    margin: 35px 145px 0 0;
+}
+
+.countries__cards__notF {
+    color: gray;
+    margin-top: 200px;
+}
+.countries__cards__notF span {
+color: rgb(26, 24, 24);
+text-transform: uppercase;
 }

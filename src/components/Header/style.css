@@ -12,25 +12,25 @@ header {
 }
 
 .header-box__search {
-border: 1px solid gray;
-display: flex;
-align-items: center;
-padding: 5px 10px;
-border-radius: 25px;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 25px;
 }
 
 .header-box__logo {
-  font-family: 'Satisfy', cursive;
+  font-family: "Satisfy", cursive;
   color: rgb(3, 40, 55);
 }
 .header-box__search__input {
-    border: none;
-    width: 200px;
-    background: transparent;
+  border: none;
+  width: 200px;
+  background: transparent;
 }
 
 .header-box__search__input:focus {
-    outline: none;
+  outline: none;
 }
 
 /* .header-box__search__icon {
@@ -38,5 +38,5 @@ border-radius: 25px;
 } */
 
 .header-box__search__icon:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
